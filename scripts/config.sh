@@ -44,3 +44,5 @@ exec |
 	echo 'DB_NAME'=postgres >> ${ENV_DIR}
 	echo 'DB_USER'=postgres >> ${ENV_DIR}
 	echo 'DB_PASS'= >> ${ENV_DIR}
+	echo 'IP_RETENTION_PERIOD'=31556952 >> ${ENV_DIR}
+	echo 'SESSION_RETENTION_PERIOD'=31556952 >> ${ENV_DIR}
