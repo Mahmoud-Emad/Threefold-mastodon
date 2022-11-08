@@ -6,4 +6,4 @@ exec: |
   docker-compose up 
   '
 after:
-  - dockerd
+  - config
