@@ -2,8 +2,7 @@ exec: |
   bash -c '
   cd docker
   chown -R 991:991 public
-  docker-compose build
   docker-compose up 
   '
 after:
-  - dockerd
+  - setup
