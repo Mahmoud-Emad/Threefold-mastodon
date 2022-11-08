@@ -60,7 +60,7 @@ https://hub.grid.tf/samehabouelsaad.3bot/abouelsaad-grid3_mastodon_docker-latest
 ### Required Env Vars
 
 - `SSH_KEY`: User SSH public key.
-- `DOMAIN_NAME`: the domain name, eg: grid3mastodon.gent01.dev.grid.tf
+- `LOCAL_DOMAIN`: the domain name, eg: grid3mastodon.gent01.dev.grid.tf
 
 #### smtp server settings
 
