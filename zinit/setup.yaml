@@ -1,4 +1,0 @@
-exec: sh -c "./scripts/config.sh"
-oneshot: true
-after:
-  - dockerd
