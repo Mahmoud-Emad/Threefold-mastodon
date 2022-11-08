@@ -1,5 +1,7 @@
 FROM ubuntu:20.04
 
+ENV SSH_KEY="Test ssh key" LOCAL_DOMAIN=Test.com SMTP_SERVER=smtp.mailgun.org SMTP_PORT=587 \
+    SMTP_AUTH_METHOD=plain
 RUN apt-get update && \
     apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg && \
