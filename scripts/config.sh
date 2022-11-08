@@ -46,4 +46,3 @@ exec |
 	echo 'DB_PASS'= >> ${ENV_DIR}
 	echo 'IP_RETENTION_PERIOD'=31556952 >> ${ENV_DIR}
 	echo 'SESSION_RETENTION_PERIOD'=31556952 >> ${ENV_DIR}
-	exec $(docker-compose run --rm web bundle exec rails db:setup)
