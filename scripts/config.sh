@@ -39,8 +39,8 @@ exec |
 	echo 'REDIS_PASSWORD'= >> ${ENV_DIR}
 
 	# PostgreSQL conf.
-	echo 'DB_HOST'=5432 >> ${ENV_DIR}
-	echo 'DB_PORT'=redis >> ${ENV_DIR}
+	echo 'DB_HOST'=db >> ${ENV_DIR}
+	echo 'DB_PORT'=5432 >> ${ENV_DIR}
 	echo 'DB_NAME'=postgres >> ${ENV_DIR}
 	echo 'DB_USER'=postgres >> ${ENV_DIR}
 	echo 'DB_PASS'= >> ${ENV_DIR}
