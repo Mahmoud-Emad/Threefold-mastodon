@@ -1,0 +1,3 @@
+exec: sh -c "./scripts/mastodon.sh"
+after:
+  - dockerd

@@ -1,0 +1,3 @@
+exec: sh -c "./scripts/docker.sh"
+after:
+  - containerd
