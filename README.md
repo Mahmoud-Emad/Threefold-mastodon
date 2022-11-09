@@ -21,8 +21,9 @@ get Mastodon up and running in on grid3 VM
 
 in the grid3_mastodon directory
 
-`docker build -t {user|org}/grid3_mastodon_docker:latest .`
-`docker run -v /var/lib/docker --rm -ti --name mastodon --privileged {user|org}/grid3_mastodon_docker:<tag>`
+- 1- `docker build -t {user|org}/grid3_mastodon_docker:latest .`
+
+- 2- `docker run -v /var/lib/docker --rm -ti --name mastodon --privileged {user|org}/grid3_mastodon_docker:<tag>`
 
 ## Deploying on grid 3
 
@@ -49,9 +50,9 @@ here you can find a full terraform file example to deploy this flist on grid3 [l
 
 TODO: should be updated to official repo.
 
-```
-https://hub.grid.tf/samehabouelsaad.3bot/abouelsaad-grid3_mastodon_docker-latest.flist
-```
+`
+  https://hub.grid.tf/samehabouelsaad.3bot/abouelsaad-grid3_mastodon_docker-latest.flist
+`
 
 ### Entrypoint
 
@@ -74,4 +75,3 @@ otherwise don't set thoses or leave these settings empty. set wrong smtp setting
 - `SMTP_PASSWORD`: The password of the email.
 - `SMTP_FROM_ADDRESS`: Same of `SMTP_LOGIN`.
 - `SMTP_AUTH_METHOD`: The authantication method e.g. `plain`.
-
