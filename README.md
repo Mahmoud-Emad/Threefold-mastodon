@@ -69,4 +69,9 @@ otherwise don't set thoses or leave these settings empty. set wrong smtp setting
 
 - `SMTP_SERVER`: eg, "smtp.gmail.com".
 - `SMTP_PORT`: eg, smtp server port.
-- `SMTP_AUTH_METHOD`: The SMTP authentication method, eg, plain or none
+- `SMTP_AUTH_METHOD`: The SMTP authentication method, eg, plain or none.
+- `SMTP_LOGIN`: The email that mastodon can use to login.
+- `SMTP_PASSWORD`: The password of the email.
+- `SMTP_FROM_ADDRESS`: Same of `SMTP_LOGIN`.
+- `SMTP_AUTH_METHOD`: The authantication method e.g. `plain`.
+

@@ -31,6 +31,9 @@ exec |
 	echo 'SMTP_FROM_ADDRESS'=$SMTP_FROM_ADDRESS >> ${ENV_DIR}
 	echo 'SMTP_AUTH_METHOD'=$SMTP_AUTH_METHOD >> ${ENV_DIR}
 	echo 'SMTP_OPENSSL_VERIFY_MODE'=none >> ${ENV_DIR}
+	echo 'SMTP_DELIVERY_METHOD'=smtp >> ${ENV_DIR}
+	echo 'SMTP_SSL'=true >> ${ENV_DIR}
+	echo 'SMTP_ENABLE_STARTTLS_AUTO'=false >> ${ENV_DIR}
 	echo 'SMTP_FROM_ADDRESS'="Mastodon <notifications@${LOCAL_DOMAIN}>" >> ${ENV_DIR}
 
 	# Redis conf.
