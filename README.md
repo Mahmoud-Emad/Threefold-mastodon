@@ -42,7 +42,7 @@ or use the dedicated Mastodon weblet if available, which will deploy an instance
 
 another way you could use is using our terraform plugin [docs](https://github.com/threefoldtech/terraform-provider-grid)
 
-here you can find a full terraform file example to deploy this flist on grid3 [link](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/mastodon/main.tf)
+<!-- here you can find a full terraform file example to deploy this flist on grid3 [link](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/mastodon/main.tf) -->
 
 ## Flist
 
