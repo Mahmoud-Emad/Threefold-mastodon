@@ -7,4 +7,3 @@ exec: |
   '
 after:
   - config
-oneshot: true
