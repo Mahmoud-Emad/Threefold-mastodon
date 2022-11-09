@@ -1,3 +1,4 @@
 exec: sh -c "/usr/bin/containerd"
 after:
   - ufw
+oneshot: true
