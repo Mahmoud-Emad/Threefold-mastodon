@@ -51,7 +51,7 @@ here you can find a full terraform file example to deploy this flist on grid3 [l
 TODO: should be updated to official repo.
 
 `
-  https://hub.grid.tf/samehabouelsaad.3bot/abouelsaad-grid3_mastodon_docker-latest.flist
+  https://hub.grid.tf/omda.3bot/mahmoudemmad-mastodon-latest.flist
 `
 
 ### Entrypoint
