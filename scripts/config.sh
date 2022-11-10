@@ -23,6 +23,7 @@ exec |
 
 	# Local domain to use it.
 	echo 'LOCAL_DOMAIN'=$LOCAL_DOMAIN >> ${ENV_DIR}
+
 	# STMP Mail Server Conf.
 	echo 'SMTP_SERVER'=$SMTP_SERVER >> ${ENV_DIR}
 	echo 'SMTP_PORT'=$SMTP_PORT >> ${ENV_DIR}
@@ -35,6 +36,10 @@ exec |
 	echo 'SMTP_SSL'=true >> ${ENV_DIR}
 	echo 'SMTP_ENABLE_STARTTLS_AUTO'=false >> ${ENV_DIR}
 	echo 'SMTP_FROM_ADDRESS'="Mastodon <notifications@${LOCAL_DOMAIN}>" >> ${ENV_DIR}
+
+	# Admin cerds.
+	echo 'SUPERUSER_USERNAME'=$SUPERUSER_USERNAME >> ${ENV_DIR}
+	echo 'SUPERUSER_EMAIL'=$SUPERUSER_EMAIL >> ${ENV_DIR}
 
 	# Redis conf.
 	echo 'REDIS_HOST'=redis >> ${ENV_DIR}

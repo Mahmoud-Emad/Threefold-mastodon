@@ -1,9 +1,3 @@
-exec: |
-  bash -c '
-  cd docker
-  chown -R 991:991 public
-  docker-compose run --rm web bundle exec rails db:setup
-  docker-compose up 
-  '
+exec: sh -c "./scripts/mastodon.sh"
 after:
   - config
