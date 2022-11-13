@@ -6,6 +6,6 @@ if [ -z "$SUPERUSER_USERNAME" ] || [ -z "$SUPERUSER_EMAIL" ]; then
         exit 1
 else
     docker-compose run --rm web bundle exec rails db:setup
-    docker-compose run --rm web rails mastodon:make_admin USERNAME=$SUPERUSER_USERNAME EMAIL=$SUPERUSER_EMAIL
+    docker-compose run --rm web bundle exec rails mastodon:make_admin USERNAME=$SUPERUSER_USERNAME EMAIL=$SUPERUSER_EMAIL
     docker-compose up 
 fi
