@@ -74,8 +74,8 @@ services:
       - redis
       # - es
     volumes:
+      - ./users:/mastodon
       - ./public/system:/mastodon/public/system
-      - ./create_superuser.rb:/mastodon
 
   streaming:
     # build: .
