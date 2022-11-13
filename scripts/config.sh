@@ -40,6 +40,7 @@ exec |
 	# Admin cerds.
 	echo 'SUPERUSER_USERNAME'=$SUPERUSER_USERNAME >> ${ENV_DIR}
 	echo 'SUPERUSER_EMAIL'=$SUPERUSER_EMAIL >> ${ENV_DIR}
+	echo 'SUPERUSER_PASSWORD'=$SUPERUSER_PASSWORD >> ${ENV_DIR}
 
 	# Redis conf.
 	echo 'REDIS_HOST'=redis >> ${ENV_DIR}
