@@ -8,10 +8,10 @@ else
     # Create and migrate the database.
     docker-compose run --rm web bundle exec rails db:setup
     # Create admin user with given email
-    result=$(docker-compose run --rm web RAILS_ENV=production bin/tootctl accounts create $SUPERUSER_USERNAME --email $SUPERUSER_EMAIL --confirmed --role Owner)
+    result=$(RAILS_ENV=production docker-compose run --rm web bin/tootctl accounts create $SUPERUSER_USERNAME --email $SUPERUSER_EMAIL --confirmed --role Owner)
     # Get the password of created account then save it into .env.production
     SUPERUSER_PASSWORD=$(echo $result | awk -F: '{print $2}')
-    echo SUPERUSER_PASSWORD=$SUPERUSER_PASSWORD >> .env.production
+    echo SUPERUSER_PASSWORD=$SUPERUSER_PASSWORD | sed 's/ //g' >> .env.production
     # Up all containers
     docker-compose up 
 fi
