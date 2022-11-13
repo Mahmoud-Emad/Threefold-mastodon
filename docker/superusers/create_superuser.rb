@@ -3,7 +3,12 @@ password = ENV['SUPERUSER_PASSWORD']
 email = ENV['SUPERUSER_EMAIL']
 
 account = Account.create!(username: username)
-user = User.create!(email: email, password: password, account: account)
+user = User.create!(
+    email: email,
+    password: password,
+    account: account,
+    agreement: true
+)
 user.confirm
 account.save!
 user.save!
