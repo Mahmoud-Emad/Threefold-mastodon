@@ -25,7 +25,7 @@ exec |
 
 	# # User SSH Pub key
 	echo 'SSH_KEY'=$SSH_KEY >> ${ENV_DIR}
-	echo 'TF_CONNECT'=$TF_CONNECT >> ${ENV_DIR}
+	echo 'IS_TF_CONNECT'=$TF_CONNECT >> ${ENV_DIR}
 
 	# Local domain to use it.
 	echo 'LOCAL_DOMAIN'=$LOCAL_DOMAIN >> ${ENV_DIR}
